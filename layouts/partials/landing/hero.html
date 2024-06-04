@@ -97,7 +97,7 @@
                         <div class="ms-lg-4">
                             <div class="classic-hero-image">
                                 
-                                <p>pok {{ $path }}</p>
+                                <p>pok -----------------</p>
                                 
                                 {{ with $image := resources.Get $path }}
                                     {{ with .Resize (printf "%dx%d webp q85 drawing Lanczos" .Width .Height) }}
