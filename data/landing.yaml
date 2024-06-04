@@ -51,8 +51,8 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: Why choose Lotus Docs?
-  subtitle: Lotus Docs is a highly configurable Hugo documentation theme. Yet, with the default configuration you can deploy and publish your documentation site in a matter of minutes. Check out some core features below.
+  title: Why choose Panduza?
+  subtitle: Panduza is a test bench as a service platform that allows you to create, manage, and run test benches in the cloud. It is designed to be easy to use, flexible, and scalable. Here are some of the key features of Panduza
 
   items:
     - title: Fast
