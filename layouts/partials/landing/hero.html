@@ -97,7 +97,7 @@
                         <div class="ms-lg-4">
                             <div class="classic-hero-image">
                                 {{ with $image := resources.Get $path }}
-                                    {{ with .Resize (printf "%dx%d webp q85 drawing Lanczos" 300 300) }}
+                                    {{ with .Resize (printf "%dx%d webp q85 drawing Lanczos" 700 300) }}
                                         <img src="{{ .RelPermalink }}" class="{{ if $boxShadow }}shadow-lg{{ else }}{{ end }} mx-auto d-block {{ if $rounded }}rounded-top-4{{ else }}{{ end }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $alt }}">
                                     {{ end }}
                                 {{ end }}
