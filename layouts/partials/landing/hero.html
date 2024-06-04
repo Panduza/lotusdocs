@@ -43,12 +43,9 @@
                             {{ with $filename }}
                                 <span>
                                     {{ with $image := resources.Get $path }}
-                                        {{ if eq .MediaType.SubType "svg" }}
-                                            {{ .Content | safeHTML }}
-                                        {{ else }}
-                                            {{ with .Resize (printf "%dx%d webp q85 drawing Lanczos" .Width .Height) }}
-                                                <img src="{{ .RelPermalink }}" alt="{{ $alt }}" height="{{ $height }}">
-                                            {{ end }}
+                                        {{ printf "%#v" .Permalink }}
+                                        {{ with .Resize (printf "%dx%d webp q85 drawing Lanczos" .Width .Height) }}
+                                            <img src="{{ .RelPermalink }}" alt="{{ $alt }}" height="{{ $height }}">
                                         {{ end }}
                                     {{ end }}
                                 </span>
